@@ -33,6 +33,8 @@ in a simple house pricing data:
 |:----:|:---------:|:-----:|
 | 2104 |     3     |  400  |
 | 1305 |     2     |  245  |
+
+
 using the size and price we can describe the relation between them using the linear function:
 $$f(x) = \theta_0 + \theta_1x_1 $$
 later we can add the number of bedrooms to the formula or add as many variables as we want:
