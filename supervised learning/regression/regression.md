@@ -60,8 +60,6 @@ $$
 \begin{bmatrix}
 \theta_0 \\ \theta_1 \\ \theta_2 
 \end{bmatrix} \quad \quad
-
-
 x = 
 \begin{bmatrix}
 x_0 \\ x_1 \\ x_2 
