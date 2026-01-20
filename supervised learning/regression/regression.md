@@ -36,14 +36,25 @@ in a simple house pricing data:
 
 
 using the size and price we can describe the relation between them using the linear function:
+
+
 $$f(x) = \theta_0 + \theta_1x_1 $$
+
+
 later we can add the number of bedrooms to the formula or add as many variables as we want:
+
+
 $$f(x) = \theta_0 + \theta_1x_1 + \theta_2x_2$$
+
+
 adding variables to the equation can make it very long or hard to read. so to make the formula a bit compact we use the summation:
-$$f(x) = \sum_{i=0}^{n} \theta_i x_i
-$$
+
+
+$$f(x) = \sum_{i=0}^{n} \theta_i x_i$$
+
 where $x_0$ = 1
 which means:
+
 $$
 \theta = 
 \begin{bmatrix}
