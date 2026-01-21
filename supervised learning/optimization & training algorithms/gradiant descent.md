@@ -71,9 +71,7 @@ $$j(\theta) = \frac{1}{2}\sum_{i=0}^{m} (f_\theta(x^i) - y^i)^2$$
 
 Its gradient is:
 
-$$\frac{\partial}{\partial\theta_j}j(\theta) = 
-
-2\frac{1}{2}(f_\theta(x^i)-y^i).x_j^i)$$
+$$\frac{\partial}{\partial\theta_j}j(\theta) = 2\frac{1}{2}(f_\theta(x^i)-y^i).x_j^i)$$
 
 So the update rule becomes:
 
