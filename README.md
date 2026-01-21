@@ -1,57 +1,89 @@
-# 🏛️ Architecture of Intelligence: A First Principles Approach
+# 🏛️ Architecture of Intelligence  
+## A First-Principles Approach to Machine Learning
 
-> **Vision Statement:** To dismantle the "Black Box" of modern AI by reconstructing industry-standard models from their foundational mathematical axioms.
-
----
-
-## 🎯 The Vision: Conceptual Integrity
-
-Most modern AI practitioners are "Framework Architects"—skilled at assembling pre-built components but often disconnected from the underlying mechanics. This repository is designed for those who wish to become **Engineers of the Machine**.
-
-Our methodology:
-
-1. Conceptual Theory:
-- The Logic of the Model
-- The Problem Space: Defining the objective
-2. Mathematical Derivation: translating conceptual intuition into Formal Axioms. This is the paper-and-pencil stage
-3. Algorithmic Translation: The Implementation: The mathematical proof is transformed into a Vectorized Engine using only Python and NumPy.
-4. Empirical Evaluation: The Visualization: We conclude by Visualizing the Results to provide proof of convergence and performance.
-
+> **Purpose:** To explain machine learning models from their underlying mathematical principles, reducing reliance on abstraction and revealing how modern algorithms actually work.
 
 ---
 
-## 🗺️ The Learning Roadmap
+## 🎯 Conceptual Focus
 
-The repository is structured as a progressive curriculum, moving from the simplest linear approximations to complex optimization landscapes.
+Modern machine learning frameworks make it possible to build powerful systems quickly, but often at the cost of obscuring the mechanics that govern learning and generalization.
+
+This repository exists to **make those mechanics explicit**.
+
+The goal is not to replace high-level tools, but to **understand what they implement** — by studying models through their conceptual motivation, mathematical formulation, and algorithmic structure.
+
+---
+
+## 🧠 Methodology
+
+Each topic in this repository follows a consistent first-principles workflow:
+
+1. **Conceptual Theory**  
+   - What problem does the model solve?  
+   - What assumptions does it make about data?
+
+2. **Mathematical Formulation**  
+   - Objective functions and constraints  
+   - Loss definitions and optimization goals  
+   - Derivations that connect intuition to equations
+
+3. **Algorithmic Interpretation**  
+   - How the mathematics translates into an iterative or closed-form procedure  
+   - Update rules and convergence behavior
+
+4. **Empirical Insight (When Applicable)**  
+   - Visualization of learning dynamics  
+   - Geometric or statistical interpretation of results  
+
+Not every model is implemented in full.  
+For more complex algorithms, **mathematical understanding takes priority over code completeness**.
+
+---
+
+## 🗺️ Learning Roadmap
+
+The repository is organized as a progressive reference, starting from foundational models and moving toward more expressive learning systems.
 
 ### 📍 Phase I: Supervised Learning & Optimization
-* **Linear Systems:** Understanding the Least Squares objective and the Normal Equation.
-* **Optimization Theory:** Implementing Gradient Descent variations (Batch, Stochastic, and Mini-Batch) to navigate non-convex surfaces.
-* **Generalization:** A deep dive into the Bias-Variance tradeoff and the role of Regularization in preventing overfitting.
+- **Linear Models**  
+  Least Squares, objective geometry, and the Normal Equation
+- **Optimization Fundamentals**  
+  Gradient Descent, Stochastic Methods, and convergence intuition
+- **Generalization Theory**  
+  Bias–Variance Tradeoff and the role of Regularization
 
-### 📍 Phase II: Discriminative Models (In Development)
-* **Logistic Structures:** Moving from continuous regression to categorical decision boundaries.
-* **Entropy & Information:** Implementing Decision Trees using Information Gain and Gini Impurity.
-
----
-
-## 🛠️ Core Principles of the Repo
-
-* **Zero-Dependency Logic:** All core algorithms are built using only `NumPy` and `Python`. This ensures that the student is learning the algorithm, not the library API.
-* **Mathematical Transparency:** Every module includes a `.md` file containing the LaTeX-rendered proof of the model’s logic.
-* **Interactive Visualization:** We use `Matplotlib` to create dynamic "Learning Snapshots" that show the model adjusting its weights in real-time.
-
-
+### 📍 Phase II: Discriminative Models *(In Development)*
+- **Logistic Models**  
+  From regression to classification and decision boundaries
+- **Information-Based Learning**  
+  Entropy, Information Gain, and Decision Trees
 
 ---
 
-## 📂 Structural Overview (still underway)
+## 🛠️ Core Principles
+
+- **Math-First Explanations**  
+  Every model is defined by its mathematics before any algorithmic form is introduced.
+
+- **Minimal Abstraction**  
+  When implementations are included, they rely on basic numerical operations to preserve transparency.
+
+- **Explicit Reasoning**  
+  No hidden steps, no unexplained shortcuts.
+
+- **Visual Intuition**  
+  Plots and diagrams are used to connect equations to behavior.
+
+---
+
+## 📂 Repository Structure *(Evolving)*
 
 ```text
 ├── supervised_learning/
-│   ├── regression/             # Theoretical derivations & LaTeX notes
-│   ├── code_implementation/    # Pure NumPy Class-based models
-│   ├── optimization/           # The mechanics of learning (GD, SGD, Adam)
-│   └── model_evaluation/       # Cross-validation, Bias/Variance, and Metrics
+│   ├── regression/             # Mathematical derivations and conceptual notes
+│   ├── optimization/           # Learning mechanics and update rules
+│   ├── implementations/        # Selected models implemented from first principles
+│   └── evaluation/             # Generalization, metrics, and validation theory
 └── material/
-    └── images/                 # Visual proofs and data plots
+    └── images/                 # Visualizations and geometric interpretations
