@@ -1,6 +1,8 @@
 Mini-batch gradient descent is a middle ground between **Batch GD** and **SGD**.  
 It uses the same update formula:
+
 $$\theta_j := \theta_j-\alpha \frac{\partial}{\partial\theta_j}j(\theta)$$
+
 Instead of using:
 
 - **1 example** (SGD), or
@@ -44,6 +46,6 @@ This gives updates that are **more stable than SGD** and **much faster than Batc
 - Not as stable as full batch GD
 
 ### mini-batch GD graph:
-![](../material/images/Pasted%20image%2020251206063142.png)
+![](../../material/images/Pasted%20image%2020251206063142.png)
 
 ---

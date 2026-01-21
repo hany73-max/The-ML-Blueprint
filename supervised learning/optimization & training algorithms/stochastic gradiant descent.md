@@ -1,5 +1,7 @@
 SGD uses the general update formula for gradient descent:
+
 $$\theta_j := \theta_j-\alpha \frac{\partial}{\partial\theta_j}j(\theta)$$
+
 Instead of computing the gradient using **all training examples** at once (like Batch GD), SGD updates the parameters **one training example at a time**:
 
 - take a single example $(x^i,y^i)$
@@ -35,6 +37,6 @@ So it doesn’t always follow the “straight path” downhill.
 - Might **never converge exactly**, but usually gets close enough
 
 ### SGD graph:
-![](../material/images/Pasted%20image%2020251206062232.png)
+![](../../material/images/Pasted%20image%2020251206062232.png)
 
 ---
