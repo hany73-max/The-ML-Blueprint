@@ -81,6 +81,3 @@ to show the iterations ($\alpha$) a bit better here is a
 - If $\alpha$ is too small → takes many iterations to converge
 
 --- 
-# References:
-
-- Stanford CS229: Machine Learning - Linear Regression and Gradient Descent | Lecture 2 (Autumn 2018)                   (youtube)

@@ -90,11 +90,3 @@ $$
 	
 
 ---
-
-
-
-
-
-# References:
-
-- Stanford CS229: Machine Learning - Linear Regression and Gradient Descent | Lecture 2 (Autumn 2018)                   (youtube)
