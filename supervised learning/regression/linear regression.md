@@ -72,6 +72,8 @@ step 1:
 $$\frac{\partial}{\partial\theta_1}j(\theta) =
 \frac{\partial}{\partial\theta_1}\sum_{i=1}^{m}\frac{1}{2m}(\theta_0+\theta_1x_1-y)^2$$
 
+Applying the chain rule, the derivative of $(u)^2$ with respect to $u$ is $2u$.
+
 step 2:
 
 $$\frac{\partial}{\partial\theta_1}j(\theta) =
@@ -100,11 +102,11 @@ $$\theta_1 := \theta_1 - \alpha\frac{1}{m}\sum_{i=1}^{m}(f(x)-y)(x)$$
 - The cost surface is smooth and bowl-shaped
     
 ### example:
-![[2019-12-11-LinReg-fig1.png|700]]
+![](../../material/images/2019-12-11-LinReg-fig1.png)
 
 to show the iterations ($\alpha$) a bit better here is a 
 ### vertical view of the mesh:
-![[Pasted image 20251205130347.png|700]]
+![](../../material/images/Pasted%20image%2020251205130347.png)
 
 - Gradient descent takes steps toward the lowest $j(\theta)$
     
@@ -115,5 +117,5 @@ to show the iterations ($\alpha$) a bit better here is a
 --- 
 # References:
 
-- Stanford CS229: Machine Learning - Linear Regression and Gradient Descent | Lecture 2 (Autumn 2018) for **andrew ng**
-- Mathematics Behind Linear Regression paper for **rahul ravi**
+- Stanford CS229: Machine Learning - Linear Regression and Gradient Descent | Lecture 2 (Autumn 2018) for          **(andrew ng)**
+- Mathematics Behind Linear Regression paper for         **(rahul ravi)**
