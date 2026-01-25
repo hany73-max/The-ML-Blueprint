@@ -37,6 +37,7 @@ $$\frac{\partial}{\partial\theta_j}j(\theta) =
 \frac{\partial}{\partial\theta_j}\sum_{i=1}^{m}\frac{1}{2m}(f_\theta(x)-y)^2$$
 
 derivative of $j(\theta)$ with respect to $\theta_0$
+
 step 1: 
 
 $$\frac{\partial}{\partial\theta_0}j(\theta) =
@@ -58,10 +59,23 @@ reminder:
 
 $$f(x) = \theta_0+\theta_1x_1$$
 
+##### in code:
+
+```
+y_pred = np.dot(x, weight) + bias
+```
+
 now substituting into the original equation for all samples.
 so the update formula becomes:
 
 $$\theta_0 := \theta_0 - \alpha\frac{1}{m}\sum_{i=1}^{m}(f(x)-y)$$
+
+##### in code:
+
+```
+db = (1 / n_samples) * np.sum(y_predicted - y)
+bias = bias - learning_rate * db
+```
 
 ---
 
@@ -92,6 +106,15 @@ now substituting into the original equation for all samples.
 so the update formula becomes:
 
 $$\theta_1 := \theta_1 - \alpha\frac{1}{m}\sum_{i=1}^{m}(f(x)-y)(x)$$
+
+##### in code:
+
+```
+dw = (1 / n_samples) * np.dot(x, (y_predicted - y))
+weight = weight - learning_rate * dw
+```
+
+for a full project implementing the linear regression visit the code implementation folder
 
 ---
 
