@@ -37,6 +37,6 @@ This means every update is based on the **most accurate and stable direction dow
 - Not suitable for real-time / online learning
 
 ### batch GD graph:
-![](../../material/images/1_09kq2L23D9XM_9Xtr8gc8Q.png)
+![](../../material/images/Pasted%20image%2020251206062603.png)
 
 ---
