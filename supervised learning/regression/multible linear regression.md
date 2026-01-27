@@ -120,7 +120,12 @@ we stated the error as $(y_{predicted} - y)$ or $(f(x) - y)$ in the linear regre
 
 here it will be the same but using vectors.
 
-$$\text{Error Vector } (E) = X\theta - y = \begin{bmatrix} \text{pred}^{(1)} - y^{(1)} \\ \text{pred}^{(2)} - y^{(2)} \\ \vdots \\ \text{pred}^{(m)} - y^{(m)} \end{bmatrix}$$
+$$\text{Error Vector } (E) = X\theta - y = \begin{bmatrix}
+\text{pred}^{(1)} - y^{(1)} \\ 
+\text{pred}^{(2)} - y^{(2)} \\ 
+\vdots \\ 
+\text{pred}^{(m)} - y^{(m)}
+\end{bmatrix}$$
 
 Look at the derivative formula again: **Sum of (Error $\times$ Feature)**. We need to multiply the **Error Column** by the **Feature Column** and sum the results.
 
