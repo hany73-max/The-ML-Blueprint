@@ -2,9 +2,9 @@ Multiple linear regression (MLR) is a statistical technique that uses several ex
 
 simply a linear regression model but with more variables.
 
-### Example: Linear Regression Model
+### Example: multiple Linear Regression Model
 
-WIP
+![](../../material/images/Screenshot%202026-01-30%20023252.png)
 
 ---
 ## mathematical explanation:
