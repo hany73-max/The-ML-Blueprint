@@ -18,7 +18,7 @@ Gradient descent:
 
 ##### Local optimum example (3D mesh illustration):
 
-![](../../material/images/1_09kq2L23D9XM_9Xtr8gc8Q.png)
+![](../optimization%20&%20training%20algorithms/assets/1_09kq2L23D9XM_9Xtr8gc8Q.png)
 
 In practice, with convex functions (like in linear regression), the cost surface has **only one global minimum**.
 

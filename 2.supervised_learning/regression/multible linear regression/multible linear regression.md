@@ -4,7 +4,7 @@ simply a linear regression model but with more variables.
 
 ### Example: multiple Linear Regression Model
 
-![](../../material/images/Screenshot%202026-01-30%20023252.png)
+![](../multible%20linear%20regression/assets/Screenshot%202026-01-30%20023252.png)
 
 ---
 ## mathematical explanation:

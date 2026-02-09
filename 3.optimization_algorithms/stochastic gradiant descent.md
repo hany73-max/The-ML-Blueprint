@@ -37,6 +37,6 @@ So it doesn’t always follow the “straight path” downhill.
 - Might **never converge exactly**, but usually gets close enough
 
 ### SGD graph:
-![](../../material/images/Pasted%20image%2020251206062232.png)
+![](../optimization%20&%20training%20algorithms/assets/Pasted%20image%2020251206062232.png)
 
 ---

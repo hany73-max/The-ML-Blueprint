@@ -1,6 +1,6 @@
 Linear Regression is a statistical tool that produces a line of best fit for a given dataset analytically. To produce the regression line manually, one needs to perform operations such as mean-squared error and optimizing the cost function; both are explained in detail later.
 ### Example: Linear Regression Model
-![](../../material/images/Screenshot%202026-01-20%20210035.png)
+![](../linear%20regression/assets/Screenshot%202026-01-20%20210035.png)
 ## mathematical explanation:
 in linear regression we want to minimize the sum of the squared difference between the predicted values and the true training data 
 

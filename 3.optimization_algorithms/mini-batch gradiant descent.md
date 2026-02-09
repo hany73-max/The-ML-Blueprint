@@ -46,6 +46,6 @@ This gives updates that are **more stable than SGD** and **much faster than Batc
 - Not as stable as full batch GD
 
 ### mini-batch GD graph:
-![](../../material/images/Pasted%20image%2020251206063142.png)
+![](../optimization%20&%20training%20algorithms/assets/Pasted%20image%2020251206063142.png)
 
 ---
