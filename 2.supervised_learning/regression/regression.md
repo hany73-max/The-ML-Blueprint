@@ -73,11 +73,11 @@ $$
 
 		$\theta_n$ → are the ones to define the slope (**weight**)
 	
-- $n$ ----> number of training examples 
+- $m$ ----> number of training examples 
 
 		(number of rows in the data)
 	
-- $x$ ----> inputs (features)                                            , $m$ ----> number of features
+- $x$ ----> inputs (features)                                            , $n$ ----> number of features
 
 		features are the data we input for the model (the columns)
 	

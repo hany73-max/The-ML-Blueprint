@@ -89,7 +89,7 @@ first we need to change how we look at the data.
 **The Weights ($\theta$):** Instead of separate variables (`bias`, `w1`, `w2`), we stack them into a single column vector. 
 
 $$\theta = \begin{bmatrix}
-\theta_0 \\ \theta_1 \\ \theta_2 
+\theta_0 \\ \theta_1 \\ \vdots \\ \theta_i 
 \end{bmatrix}$$
 
 **The Features ($X$):** We stack all our training samples into a big matrix.
@@ -97,10 +97,10 @@ $$\theta = \begin{bmatrix}
 $$
 X =
 \begin{bmatrix}
-1 & x_1^{(1)} & x_2^{(1)} \\
-1 & x_1^{(2)} & x_2^{(2)} \\
-\vdots & \vdots & \vdots \\
-1 & x_1^{(m)} & x_2^{(m)}
+1 & x_1^{(1)} & \cdots & x_i^{(1)} \\
+1 & x_1^{(2)} & \cdots & x_i^{(2)} \\
+\vdots & \vdots &   & \vdots\\
+1 & x_1^{(m)} & \cdots & x_i^{(m)}
 \end{bmatrix}
 $$
 
@@ -113,7 +113,7 @@ $$f(x) = X \cdot \theta$$
 of course the actual target will also get stacked into a matrix:
 
 $$y = \begin{bmatrix} 
-y^1 \\ y^2 \\ y^3
+y^1 \\ y^2 \\ \vdots \\ y^m
 \end{bmatrix}$$
 
 we stated the error as $(y_{predicted} - y)$ or $(f(x) - y)$ in the linear regression article.
