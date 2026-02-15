@@ -4,17 +4,17 @@ A structured repository deconstructing Machine Learning algorithms into four fun
 🏗 The Framework
 Every algorithm in this repository is processed through a consistent, four-step pipeline to ensure deep comprehension and practical mastery:
 
-Intuition: Conceptual overview and core logic, stripped of unnecessary jargon.
+1.Intuition: Conceptual overview and core logic, stripped of unnecessary jargon.
 
-Mathematics: Formal derivation of objective functions, gradients, and optimization techniques.
+2.Mathematics: Formal derivation of objective functions, gradients, and optimization techniques.
 
-Implementation:
+3.Implementation:
 
-From Scratch: Pure NumPy implementation to prove the underlying math.
+- From Scratch: Pure NumPy implementation to prove the underlying math.
 
-Standard: Practical application using industry-standard libraries (Scikit-Learn, PyTorch).
+- Standard: Practical application using industry-standard libraries (Scikit-Learn, PyTorch).
 
-Visualization: Geometric interpretation of model behavior, cost surfaces, and decision boundaries.
+4.Visualization: Geometric interpretation of model behavior, cost surfaces, and decision boundaries.
 
 📂 Directory Structure
 ```text
