@@ -12,14 +12,19 @@ This will be explained mathematically in detail below through the two most commo
 Think of the weights ($\theta$) as the "volume knob" for each feature. If the model is overfitting, it means some of the volume knobs are turned up way too high on noisy data. By adding a penalty to the cost function, we force the gradient descent algorithm to turn those volume knobs down.
 
 ---
+
 ## Mathematical Explanation: Ridge Regression (L2)
 
 Before we dive into the regularized cost function, let's look at the standard Multiple Linear Regression Cost Function (Mean Squared Error) that we want to minimize:
+
 $$J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2$$
+
 In **Ridge Regression**, we add a penalty term to the end of this cost function. This penalty is the **squared magnitude** of the coefficients.
 
 The Ridge Cost Function becomes:
+
 $$J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda \sum_{j=1}^{n} \theta_j^2$$
+
 Here, $\lambda$ (Lambda) is the **regularization parameter**. It controls how harsh the penalty is.
 
 - If $\lambda = 0$, the penalty disappears, and you just have standard Linear Regression.
@@ -33,8 +38,11 @@ Because Ridge squares the weights ($\theta_j^2$), it punishes exceptionally larg
 
 **The Update Function for Ridge:**
 Taking the partial derivative of this new cost function, our Gradient Descent update rule changes slightly to include the derivative of the penalty:
+
 $$\theta_j := \theta_j - \alpha \left[ \frac{1}{m} \sum_{i=1}^{m} \left(h_\theta(x^{(i)}) - y^{(i)} \right) x_j^{(i)} + \frac{\lambda}{m} \theta_j \right]$$
+
 code implementation:
+
 ```
 for i in range(iterations):
     # 1. Calculate predictions
@@ -53,7 +61,9 @@ for i in range(iterations):
     # 5. Update theta
     theta = theta - (learning_rate * gradient)
 ```
+
 ---
+
 ## Mathematical Explanation: Lasso Regression (L1)
 
 Ridge Regression is great, but what if we have a dataset with 1,000 features and we _know_ 900 of them are completely useless? We don't just want to shrink the useless weights; we want to delete them entirely.
@@ -61,15 +71,21 @@ Ridge Regression is great, but what if we have a dataset with 1,000 features and
 This is where **Lasso Regression** (Least Absolute Shrinkage and Selection Operator) comes in. Instead of adding the squared magnitude, Lasso adds the **absolute value** of the coefficients as the penalty.
 
 The Lasso Cost Function becomes:
+
 $$J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda \sum_{j=1}^{n} |\theta_j|$$
-Because of the way the absolute value math works (which creates sharp corners in the geometric space of the function), Lasso doesn't just shrink weights—it drives the weights of useless features to **exactly zero**.
+
+Because of the way the absolute value math works (which creates sharp corners in the geometric space of the function), Lasso doesn't just shrink weights—it drives the weights of 
+useless features to **exactly zero**.
 
 This means Lasso performs automatic **Feature Selection**. It looks at the "owner's shoe size" column, realizes it doesn't help predict house prices, and mathematically deletes it by making its $\theta = 0$.
 
 **The Update Function for Lasso:**
 The derivative of an absolute value $|\theta_j|$ is the `sign` of $\theta_j$ (which is +1 if $\theta$ is positive, and -1 if $\theta$ is negative).
+
 $$\theta_j := \theta_j - \alpha \left[ \frac{1}{m} \sum_{i=1}^{m} \left(h_\theta(x^{(i)}) - y^{(i)} \right) x_j^{(i)} + \frac{\lambda}{m} \text{sign}(\theta_j) \right]$$
+
 code implementation:
+
 ```
 for i in range(iterations):
     # 1. Calculate predictions
