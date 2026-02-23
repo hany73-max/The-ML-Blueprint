@@ -110,3 +110,8 @@ for i in range(iterations):
 - Use **Ridge (L2)** when you have many features that you believe are all somewhat useful, and you just want to prevent the model from assigning crazy high weights to any single one of them.
     
 - Use **Lasso (L1)** when you have a massive amount of features and you suspect many of them are completely useless. It will act as a bouncer, throwing the bad features out of your equation entirely.
+
+for deeper understanding make sure to check these sources  
+- [he Mathematical background of Lasso and Ridge Regression   **(medium)**](https://medium.com/codex/mathematical-background-of-lasso-and-ridge-regression-23b74737c817)
+- [What is lasso regression? **(IBM)**](https://www.ibm.com/think/topics/lasso-regression#1190488335)
+- [What is ridge regression?   **(IBM)**](https://www.ibm.com/think/topics/ridge-regression#1190488336)
