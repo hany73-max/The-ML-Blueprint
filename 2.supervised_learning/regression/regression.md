@@ -91,8 +91,8 @@ $$
 	
 - (xᶦ, yᶦ) ----> the i-th training example
 
-		xᶦ → the features of example i  
+		xᶦ → the ith feature
 
-		yᶦ → the target for example i
+		yᶦ → the ith target
 
 ---
