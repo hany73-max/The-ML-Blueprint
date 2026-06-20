@@ -3,7 +3,9 @@ Linear Regression is a statistical tool that produces a line of best fit for a g
 ![](../linear%20regression/assets/Screenshot%202026-01-20%20210035.png)
 ## mathematical explanation:
 the line in the figure can be described using the linear equation:
+
 $$f(x) = x_1\theta_1 + \theta_0$$
+
 ##### in code:
 ```
 y_pred = np.dot(x, weight) + bias
