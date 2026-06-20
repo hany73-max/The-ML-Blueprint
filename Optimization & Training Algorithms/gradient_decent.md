@@ -58,20 +58,20 @@ that is why there are various types of gradient and other methods to kick the mo
 ---
 ## Types of Gradient Descent
 
-- **[[Batch Gradient Descent]]**
+- **Batch Gradient Descent**
 	
 	- Uses **all training samples** to compute each update.
 		sums all the samples before updating the $\theta_j$ once
 		
 	- Very stable but can be slow for large datasets.
 	
--  **[[Stochastic Gradient Descent]]**
+-  **Stochastic Gradient Descent**
 	
 	- Uses **one random sample** per update.
 		
 	- Very fast, but noisy and unstable.
 	
-- **[[Mini-Batch Gradient Descent]]**
+- **Mini-Batch Gradient Descent**
 	
 	- Uses **small batches** of samples (e.g., 32, 64, 128).
 		
