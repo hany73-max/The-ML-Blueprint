@@ -44,24 +44,24 @@ $$\theta_j := \theta_j-\alpha \frac{\partial}{\partial\theta_j}j(\theta)$$
 by applying the linear regression formula:
 
 $$\frac{\partial}{\partial\theta_j}j(\theta) =
-\frac{\partial}{\partial\theta_j}\sum_{i=1}^{n}\frac{1}{2m}(f_\theta(x)-y)^2$$
+\frac{\partial}{\partial\theta_j}\sum_{i=1}^{m}\frac{1}{2m}(f_\theta(x)-y)^2$$
 
 ##### derivative of $j(\theta)$ with respect to $\theta_0$
 step 1: 
 
 $$\frac{\partial}{\partial\theta_0}j(\theta) =
-\frac{\partial}{\partial\theta_0}\sum_{i=1}^{n}\frac{1}{2m}(\theta_0+\theta_1x_1-y)^2$$
+\frac{\partial}{\partial\theta_0}\sum_{i=1}^{m}\frac{1}{2m}(\theta_0+\theta_1x_1-y)^2$$
 
 Applying the chain rule, the derivative of $(u)^2$ with respect to $u$ is $2u$.
 step 2:
 
 $$\frac{\partial}{\partial\theta_0}j(\theta) =
-\sum_{i=1}^{n}2\frac{1}{2m}(\theta_0+\theta_1x_1-y)$$
+\sum_{i=1}^{m}2\frac{1}{2m}(\theta_0+\theta_1x_1-y)$$
 
 step 3:
 
 $$\frac{\partial}{\partial\theta_0}j(\theta) =
-\frac{1}{m}\sum_{i=1}^{n}(\theta_0+\theta_1x_1-y)$$
+\frac{1}{m}\sum_{i=1}^{m}(\theta_0+\theta_1x_1-y)$$
 
 reminder:
 
@@ -70,7 +70,7 @@ $$f(x) = \theta_0+\theta_1x_1$$
 now substituting into the original equation for all samples.
 so the update formula becomes:
 
-$$\theta_0 := \theta_0 - \alpha\frac{1}{m}\sum_{i=1}^{n}(f(x)-y)$$
+$$\theta_0 := \theta_0 - \alpha\frac{1}{m}\sum_{i=1}^{m}(f(x)-y)$$
 
 ##### in code:
 ```
