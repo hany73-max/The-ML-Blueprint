@@ -43,18 +43,24 @@ $$f(x) = X \cdot \theta$$
 
 Reminder:
 
-$$X = \begin{bmatrix} 1 & x_1^{(1)} & \cdots & x_i^{(1)} 
-\\ 1 & x_1^{(2)} & \cdots & x_i^{(2)} 
-\\ \vdots & \vdots & & \vdots
-\\ 1 & x_1^{(m)} & \cdots & x_i^{(m)} \end{bmatrix} ,
- \quad\quad \theta = \begin{bmatrix} \theta_0 
- \\ \theta_1 
- \\ \vdots 
- \\ \theta_i \end{bmatrix}, 
- \quad\quad y = \begin{bmatrix} y^{(1)} 
- \\ y^{(2)} 
- \\ \vdots 
- \\ y^{(m)} \end{bmatrix}$$
+$$X = \begin{bmatrix} 
+1 & x_1^{(1)} & \cdots & x_i^{(1)} \\ 
+1 & x_1^{(2)} & \cdots & x_i^{(2)} \\ 
+\vdots & \vdots & \ddots & \vdots \\ 
+1 & x_1^{(m)} & \cdots & x_i^{(m)} 
+\end{bmatrix} , \quad\quad 
+\theta = \begin{bmatrix} 
+\theta_0 \\ 
+\theta_1 \\ 
+\vdots \\ 
+\theta_i 
+\end{bmatrix}, \quad\quad 
+y = \begin{bmatrix} 
+y^{(1)} \\ 
+y^{(2)} \\ 
+\vdots \\ 
+y^{(m)} 
+\end{bmatrix}$$
 
 _(Vectorization is explained in detail in the Multiple Linear Regression article.)_
 
